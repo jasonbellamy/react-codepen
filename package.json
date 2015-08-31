@@ -1,0 +1,42 @@
+{
+  "name": "react-codepen",
+  "description": "A react component to embed pens from codepen.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jasonbellamy/react-codepen",
+  "author": {
+    "name": "Jason Bellamy",
+    "email": "j@sonbellamy.com",
+    "url": "http://jasonbellamy.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasonbellamy/react-codepen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jasonbellamy/react-codepen/issues"
+  },
+  "license": "MIT",
+  "main": "dist/react-codepen",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "build": "babel -d dist src",
+    "clean": "rm -rf dist && mkdir dist",
+    "watch": "babel -w -d dist src",
+    "preversion": "npm run clean && npm run build",
+    "postpublish": "git push && git push --tag"
+  },
+  "devDependencies": {
+    "babel": "^5.8.9",
+    "core-js": "^0.9.6",
+    "react": "^0.13.3"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "codepen",
+    "editor",
+    "embed"
+  ]
+}
