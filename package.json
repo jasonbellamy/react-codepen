@@ -1,7 +1,7 @@
 {
   "name": "react-codepen",
   "description": "A react component to embed pens from codepen.io",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "homepage": "https://github.com/jasonbellamy/react-codepen",
   "author": {
     "name": "Jason Bellamy",
